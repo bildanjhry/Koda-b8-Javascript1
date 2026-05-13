@@ -1,8 +1,8 @@
 const PI = 3.14
 let r = 100
 
-const luas = PI * r * r
-const keliling = 2 * PI * r
+const L = PI * r * r
+const K = 2 * PI * r
 
-console.log(`Luas dari lingkaran = ${luas}`)
-console.log(`Keliling dari lingkaran = ${keliling}`)
+console.log(`Luas dari lingkaran = ${L}`)
+console.log(`Keliling dari lingkaran = ${K}`)
