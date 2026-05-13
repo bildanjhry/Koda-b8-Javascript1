@@ -16,13 +16,14 @@ conJ@{shape: diam, label: "j <= i"}
 add@{shape: rect, label: 'stars += "* "'}
 incJ@{shape: rect, label: "j++"}
 inc@{shape: rect, label: "i++"}
+prn@{shape: lean-r, label: '"{stars}"'}
 fin@{shape: double-circle, label: "stop"}
 
 start-->ref-->init-->con
 con-- Yes -->dec-->initJ-->conJ
 con-- No -->fin
 conJ-- Yes -->add-->incJ
-conJ-- No -->inc-->con
+conJ-- No -->prn-->inc-->con
 incJ-->conJ
 
 ```
