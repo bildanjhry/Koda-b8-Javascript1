@@ -1,7 +1,7 @@
 # Flowchart
 
 ## Program membuat hitung luas dan keliling lingkaran
-Alagoritma ini dibuat untuk merancang program hitung luas dan keliling lingkaran
+Algoritma ini dibuat untuk merancang program hitung luas dan keliling lingkaran
 
 ```mermaid
 flowchart TD
