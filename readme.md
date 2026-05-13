@@ -21,7 +21,7 @@ outK@{shape: lean-r, label: '"Keliling dari lingkaran = {K}"'}
 finnish@{shape: double-circle, label: "stop"}
 
 start-->r-->piEm-->conType
-conType-- Yes -->logErr-->ret-->rfinnish
+conType-- Yes -->logErr-->ret-->finnish
 conType-- No -->des
 des-- No -->pi-->L-->K-->outL-->outK-->finnish
 des-- Yes -->pi2-->L
