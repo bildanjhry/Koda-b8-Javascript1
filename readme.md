@@ -12,6 +12,7 @@ pi@{shape:rect, label: "PI = 3.14" }
 pi2@{shape:rect, label: "PI = 22/7" }
 r@{shape: lean-r, label: "r"}
 conType@{shape: diam, label: 'typeof r !== "number"'}
+ret@{shape: rect, label: "return"}
 L@{shape: rect, label: "L = PI x r x r"}
 outL@{shape: lean-r, label : '"Luas dari lingkaran = {L}"'}
 K@{shape: rect, label: "K = 2 x PI x r"}
@@ -20,7 +21,7 @@ outK@{shape: lean-r, label: '"Keliling dari lingkaran = {K}"'}
 finnish@{shape: double-circle, label: "stop"}
 
 start-->r-->piEm-->conType
-conType-- Yes -->logErr-->finnish
+conType-- Yes -->logErr-->ret-->rfinnish
 conType-- No -->des
 des-- No -->pi-->L-->K-->outL-->outK-->finnish
 des-- Yes -->pi2-->L
