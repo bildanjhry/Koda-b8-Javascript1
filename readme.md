@@ -9,9 +9,9 @@ start@{shape: circle, label: "start"}
 pi@{shape:rect, label: "PI = 3.14" }
 r@{shape: lean-r, label: "r"}
 L@{shape: rect, label: "L = PI x r x r"}
-outL@{shape: lean-r, label : 'Luas dari lingkaran = "{L}"'}
+outL@{shape: lean-r, label : '"Luas dari lingkaran = {L}"'}
 K@{shape: rect, label: "K = 2 x PI x r"}
-outK@{shape: lean-r, label: 'Keliling dari lingkaran = "{K}"'}
+outK@{shape: lean-r, label: '"Keliling dari lingkaran = {K}"'}
 finnish@{shape: double-circle, label: "stop"}
 
 start-->pi-->r-->L-->K-->outL-->outK-->finnish
