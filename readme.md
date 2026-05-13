@@ -6,7 +6,10 @@ Alagoritma ini dibuat untuk merancang program hitung luas dan keliling lingkaran
 ```mermaid
 flowchart TD
 start@{shape: circle, label: "start"}
+des@{shape: diam, label: " r % 7 == 0" }
+piEm@{shape: rect, label: "PI = 0" }
 pi@{shape:rect, label: "PI = 3.14" }
+pi2@{shape:rect, label: "PI = 22/7" }
 r@{shape: lean-r, label: "r"}
 L@{shape: rect, label: "L = PI x r x r"}
 outL@{shape: lean-r, label : '"Luas dari lingkaran = {L}"'}
@@ -14,7 +17,9 @@ K@{shape: rect, label: "K = 2 x PI x r"}
 outK@{shape: lean-r, label: '"Keliling dari lingkaran = {K}"'}
 finnish@{shape: double-circle, label: "stop"}
 
-start-->pi-->r-->L-->K-->outL-->outK-->finnish
+start-->r-->piEm-->des
+des-- No -->pi-->L-->K-->outL-->outK-->finnish
+des-- Yes -->pi2-->L
 
 
 ```
