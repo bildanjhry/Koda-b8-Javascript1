@@ -1,19 +1,27 @@
-let r = "100"
+let r = 8
 let PI = 0
 
-if(typeof r !== "number"){
-    console.log(`Input ${r} bukan number`)
-    return
+const hitungLingkaran = () => {
+    
+    // guarding
+    if(typeof r !== "number"){
+        console.log(`Input ${r} bukan number`)
+        return
+    }
+    
+    if(r % 7 == 0){
+        PI = 22/7
+    } else {
+        PI = 3.14
+    }
+    
+    const L = PI * r * r
+    const K = 2 * PI * r
+    
+    console.log(`Luas dari lingkaran = ${L}`)
+    console.log(`Keliling dari lingkaran = ${K}`)
+
 }
 
-if(r % 7 == 0){
-    PI = 22/7
-} else {
-    PI = 3.14
-}
+hitungLingkaran(r, PI)
 
-const L = PI * r * r
-const K = 2 * PI * r
-
-console.log(`Luas dari lingkaran = ${L}`)
-console.log(`Keliling dari lingkaran = ${K}`)
