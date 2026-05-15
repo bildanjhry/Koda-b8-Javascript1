@@ -1,8 +1,8 @@
 let r = 8
 let PI = 0
 
-const hitungLingkaran = () => {
-    
+const hitungLingkaran = (r, PI) => {
+
     // guarding
     if(typeof r !== "number"){
         console.log(`Input ${r} bukan number`)
