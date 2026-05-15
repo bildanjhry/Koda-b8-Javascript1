@@ -1,4 +1,3 @@
-let r = 8
 let PI = 0
 
 const hitungLingkaran = (r, PI) => {
@@ -23,5 +22,5 @@ const hitungLingkaran = (r, PI) => {
 
 }
 
-hitungLingkaran(r, PI)
+hitungLingkaran(8, PI)
 
